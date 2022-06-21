@@ -28,7 +28,7 @@
         <div class="topnav" id="myTopnav">
             <a href="#about" class="active">About</a>
             <a href="#my_projects">My Projects</a>
-            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -50,12 +50,19 @@
         <div class="row">
             <div class="col-6">
                 <div class="about_me">
-                        
-                <div class="row"> 
-                    <div class="container"> 
+                   <div id="about">
+                    <div class="row"> 
+                         <div class="container"> 
                         
                         <div class="photo">
                             <img src="../my_site/images/photo.png" style="width: 100%; height: auto;"/>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-skype"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+    
                             </div>
                         </div>
                           
@@ -63,62 +70,90 @@
             
                            
                     </div>
-                    </div>
+    
 
                     <div class="my_name"> 
-                        <div id="my_first_name"> <h1>Ruskina </h1></div>
-                        <div id="my_last_name"><h1>Oleksandra</h1></div> 
 
-                        <div class="icons">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-skype"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-
-                        </div>
-                    
+                        <div id="my_first_name"> <h1>Ruskina Oleksandra</h1></div>
+                        <div id="my_last_name"> financial analyst, project CFO, current CFO at DTU </div>
                     </div>
+                    </div>
+                </div>
 
-
+            <div id="my_projects">
                 <div class="my_jobs"> 
                     <div class="first_job">
                         <div class="job_text">
-                            <h2>Financial Analytic</h2>
+                            <h2>First project</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p> 
                     </div>
                 </div>
                 <div class="first_job">
                         <div class="job_text">
-                            <h2>Financial Analytic</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p> 
+                            <h2>Second project</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>  
                     </div>
                 </div>
                 </div>
+               </div>
             </div>
-            <div class="col-6">
+        <div class="col-6">
+                <div id="skills">
                 <div class="my_education"> 
                 <div class="my_first_education">
                     <div class="ed_text">
-                    <h2>Financial Analytic </h2>
+                    <h2>My hard skills </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
                 </div>
             </div>
 
                 <div class="my_second_education">
                     <div class="ed_text">
-                    <h2>Financial Analytic </h2>
+                    <h2>My soft skills </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
                 </div>
             </div>
                 <div class="my_last_education">
                     <div class="ed_text">
-                    <h2>Financial Analytic </h2>
+                    <h2>My education and courses </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, distinctio nobis eligendi consequuntur eveniet magnam at hic repudiandae labore ut perspiciatis. A quisquam aperiam est quaerat consectetur, accusamus perferendis.</p>
                      </div>
                     </div>
                
+                </div>
+            </div>
+        
+         
+    
+            <div id="contact">
+             <form action="action_page.php">
+
+                <label for="fname">First Last Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="tel" name="phone_number" placeholder="Your phone.." pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="Poland">Poland</option>
+                  <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
             </div>
         </div>
+
     </div>
 </div>
 

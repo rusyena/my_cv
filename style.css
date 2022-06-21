@@ -17,6 +17,8 @@ margin: 0 0 0;
   background-color: pink;
 }}
 
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Nuosu+SIL&display=swap');
+
 /* @media(orientation:portrait) and(orientation:landscape) */
 
 /* /* Add a black background color to the top navigation */
@@ -94,14 +96,19 @@ h1{ color:rgb(18, 24, 56);
     text-align: center;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-#my_first_name{ color: #f2f2f2;
+.my_name{
+  display:inline-flexbox;
+}
+
+#my_first_name{ 
+  color: #f2f2f2;
     text-align: center;
     } /* id задаем хэштегом*/
 
     .icons{    
       display: flex;
       justify-content: space-evenly;
-      padding: 20px;
+      padding: 0 20px;
     }
 
 
@@ -138,15 +145,23 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
   color: white;
 }
 
+h1, h2{
+  font-family: 'Joan', serif;
+  font-variant: small-caps;
+  margin-bottom: 20px !important;
+}
 
-.my_first_education, .my_second_education, .my_last_education { 
+.my_first_education, .my_second_education, .my_last_education, #contact { 
   background-color: #d3dfeb;
   margin: 20px 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }/* класс задаем точкой*/
 
 .ed_text{
   color:#1d2f3d;
   padding: 20px 20px;
+  font-family: 'Nuosu SIL', serif;
+  font-weight: 200;
   line-height: 1.5 rem;
   text-align: justify;
 }
@@ -154,26 +169,58 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 .first_job, .my_name{
   background-color: #1d2f3d;
   margin: 20px 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.job_text, .my_name{
+.job_text {
   color:#a4b0bc;
   padding: 20px 20px;
+  font-family: 'Nuosu SIL', serif;
+  font-weight: 200;
   line-height: 1.5 rem;
   text-align: justify;
 }
-/* .color{
-  width: 100%; height: 400px; background-color:blue;
+.my_name {
+  color: #a4b0bc;
+  padding: 20px 20px;
+  font-family: 'Nuosu SIL', serif;
+  font-weight: 200;
+  text-align: center;}
+
+
+#contact{
+  padding: 20px 20px;
 }
 
-.test_vw {
-  background-color: aqua;
-width: 100%;
-height:100px;
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    /* box-sizing: border-box; Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #192933;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #9ca8b6;
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .test_vw {
   width: 50vw;
 }} */
