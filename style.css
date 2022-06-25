@@ -5,19 +5,17 @@ style   id      class    element */
 
 
 body{ font-size: 12px;
-background-image: url('verne-ho-0LAJfSNa-xQ-unsplash.jpg');
+background-image: url('background.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 margin: 0 0 0;
 }
 
-@media(max-width:600px) and(min-width:350px){
-.my_education {
-  background-color: pink;
-}}
 
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lustria&display=swap');
+
 
 /* @media(orientation:portrait) and(orientation:landscape) */
 
@@ -33,10 +31,10 @@ margin: 0 0 0;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 24px 24px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 12px;
-    font-family: "Futura md medium", Helvetica, Arial, sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -76,6 +74,7 @@ margin: 0 0 0;
       position: absolute;
       right: 0;
       top: 0;
+      font-size: 12px;
     }
     .topnav.responsive a {
       float: none;
@@ -92,18 +91,25 @@ margin: 0 0 0;
     -webkit-filter: grayscale(100%); 
    }
 
-h1{ color:rgb(18, 24, 56);
+h3{ 
+  color:rgb(183, 187, 209);
     text-align: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: calc(18px + 12 * ((100vw - 320px) / (1280 - 320)));
+  }
 
-.my_name{
+.my_name{  
   display:inline-flexbox;
+  color: #a4b0bc;
+  padding: 20px 20px;
+  font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
 }
 
-#my_first_name{ 
-  color: #f2f2f2;
-    text-align: center;
-    } /* id задаем хэштегом*/
 
     .icons{    
       display: flex;
@@ -112,47 +118,35 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     }
 
 
-.fa {
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 5px;
-  border-radius: 50%;
-  filter: grayscale(100%);
-      -webkit-filter: grayscale(100%); 
-}
+    .social a {
+      text-align: center;
+      width: 48px;
+      height: 48px;
+      float: left;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+      border-radius: 24px;
+      margin: 0 0px 0px 0;
+      padding: 6px;
+      color: #000;
+  }
 
-.fa:hover {
-    opacity: 0.7;
-}
+.github a:hover {background: #191919; color: #fff;}
+.linkedin a:hover {background: #0e76a8; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
 
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-h1, h2{
-  font-family: 'Joan', serif;
+h4 {
+  font-family: 'Lustria', serif;
   font-variant: small-caps;
   margin-bottom: 20px !important;
+  font-size: calc(18px + 12 * ((100vw - 320px) / (1280 - 320)));
 }
 
 .my_first_education, .my_second_education, .my_last_education, #contact { 
-  background-color: #d3dfeb;
+  background-color: #d3dfebed;
   margin: 20px 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }/* класс задаем точкой*/
@@ -160,14 +154,14 @@ h1, h2{
 .ed_text{
   color:#1d2f3d;
   padding: 20px 20px;
-  font-family: 'Nuosu SIL', serif;
-  font-weight: 200;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
   line-height: 1.5 rem;
   text-align: justify;
 }
 
 .first_job, .my_name{
-  background-color: #1d2f3d;
+  background-color: #1d2f3de8;
   margin: 20px 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -175,33 +169,26 @@ h1, h2{
 .job_text {
   color:#a4b0bc;
   padding: 20px 20px;
-  font-family: 'Nuosu SIL', serif;
-  font-weight: 200;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
   line-height: 1.5 rem;
   text-align: justify;
 }
-.my_name {
-  color: #a4b0bc;
-  padding: 20px 20px;
-  font-family: 'Nuosu SIL', serif;
-  font-weight: 200;
-  text-align: center;}
 
 
 #contact{
   padding: 20px 20px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+
 input, select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    /* box-sizing: border-box; Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -219,8 +206,29 @@ input[type=submit]:hover {
     background-color: #9ca8b6;
 }
 
+hr {
+  border: 0;
+  border-top: 2px solid #d3dfeb;
+}
 
-/* @media screen and (max-width: 600px) {
-  .test_vw {
-  width: 50vw;
-}} */
+.footer {
+  background-color: #1d2f3d;
+  overflow: hidden;
+  padding: 20 20;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: rgb(215, 215, 228); /* Цвет ссылок */
+  text-decoration: none; /* Убираем подчёркивание */
+  font-size: 12px;
+  font-family: 'Libre Franklin', sans-serif;
+ }
+ a:hover {
+  color: rgba(215, 215, 228, 0.575); /* Цвет ссылок */
+ }
+
+/* @media screen and (min-width: 20em){
+  html { font-size: calc( 12px + (18 - 12) * (100vw - 400px) / (800 - 400) ); }
+} */
